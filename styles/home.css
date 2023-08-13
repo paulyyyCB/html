@@ -171,8 +171,7 @@ ul li a:hover{
     height: 50px;
     right: 75px;
     position: 30px;
-    background: rgb(212,201,198);
-    background: #b8c0ff; 
+    background-color: #A98467;
     padding: 10px 15px;
     font-size: 30px;
     font-family: 'Merriweather', serif;
@@ -222,7 +221,7 @@ navbar>i{
 
 }
 #lista- li::marker{
-    content: url(/image/corados.svg);
+    content: url(/image/iconmonstr-easter-19-240.svg);
 }
 #lista-{
     margin-left: 20px;
@@ -270,13 +269,13 @@ navbar>i{
     height: 50px;
     right: 75px;
     position: 30px;
-    background: rgb(212,201,198);
-    background: #b8c0ff; 
+    background-color: #A98467; 
     padding: 10px 15px;
     font-size: 30px;
     font-family: 'Merriweather', serif;
     border-radius: 20px;
     color: #f2e9e4;
+    display: flex;
 }
 #exp{
     position: relative;
@@ -286,12 +285,37 @@ navbar>i{
     cursor: pointer;
 
 }
-@media screen and (max-width: 768px)/*es para celular*/{
+/*tercer pagina*/
+#rt{
+    width: 300px;
+    border-radius: 10px;
+    margin-top: 5px;
+}
+/*cuarta pagina*/
+#marcasmalas,#marcasbuenas{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 18px;
+    color: #786a76;
+}
+#free{
+    width: 400px;
+    border-radius: 50px;
+    display: block;
+}
+/*Quinta pagina*/
+
+#finalfinal{
+    
+    font-size: 15px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: center;
+}
+@media screen and (max-width: 800px)/*es para celular*/{
 
 }
 
 
-@media screen and (max-width: 425px) {
+@media screen and (max-width: 500px) {
     .WRAPPER{
 
         flex-direction: column;
@@ -305,6 +329,9 @@ navbar>i{
     }
     #image{
         width: 225px;
+    }
+    .link,.link1{
+        display: flex;
     }
 }
 @media screen and (max-width: 300px){
