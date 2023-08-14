@@ -3,7 +3,11 @@
     padding: 0;
     margin: 0;
 }
-
+/*ajustes genereales*/
+body{
+    width: 100%!important;
+    overflow-x: hidden!important;
+}
 
 .main-section{
     padding: 100px 150px;
@@ -57,10 +61,11 @@ p{
 
 }
 #bar-navigator ul{
+    
     list-style-type: none;
     display: flex;
     justify-content: center;
-    gap: 40px;
+    gap: 60px;
     
 }
 #menu{
@@ -100,7 +105,7 @@ p{
     position: absolute;
     top: 15px;
     left: 0;
-    /*align-self: center;*/
+    align-self: center;
     z-index: 20;
 }
 #men{
@@ -118,7 +123,7 @@ ul li a{
     font-family: Georgia, 'Times New Roman', Times, serif;
     text-decoration: none;
     color: #020101;
-    padding: 25px 25px;
+    padding: 25px 0px;
     background-color: #dde5b6;
     border-radius: 20px;
     margin-bottom: 10px;
@@ -129,7 +134,7 @@ ul li a:hover{
     
 }
 #logo{
-    position: absolute;
+    position: -webkit-sticky;
     top: 5px;
     width: 70px;
     border-radius: 50px;
@@ -180,13 +185,13 @@ ul li a:hover{
 }
 .WRAPPER{
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     gap: 50px;
 }
 .media{
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: space-around;
     gap: 50px;
 }
 .info{
@@ -257,8 +262,8 @@ navbar>i{
 }
 
 .info1{
-    display: flex;
-    justify-content: center;
+    display: column;
+    width: 90%;
     gap:30px;
 }
 .link1{
@@ -282,6 +287,7 @@ navbar>i{
     width: 300px;
     border-radius: 10px;
     margin-top: 300px;
+    
     cursor: pointer;
 
 }
@@ -290,6 +296,13 @@ navbar>i{
     width: 300px;
     border-radius: 10px;
     margin-top: 5px;
+}
+.media1{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 50px;
+    margin-right: 100px;
 }
 /*cuarta pagina*/
 #marcasmalas,#marcasbuenas{
@@ -303,37 +316,173 @@ navbar>i{
     display: block;
 }
 /*Quinta pagina*/
+#logito{
+    width: 250px;
+}
+#insta,#feiss,#github{
 
+    width: 150px;
+}
 #finalfinal{
     
     font-size: 15px;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     text-align: center;
 }
-@media screen and (max-width: 800px)/*es para celular*/{
+/*es para celular*/
+@media screen and (max-width: 900px){
 
 }
 
 
-@media screen and (max-width: 500px) {
-    .WRAPPER{
-
-        flex-direction: column;
+@media screen and (max-width: 900px) {
+    section.main-section{
+        padding: 10px 30px;
+        
+    }
+    div.WRAPPER{
+        justify-content: space-between;
+    }
+    #body{
+        text-overflow: initial;
+    }
+    
+    h1#tito{
+        font-size: 200%;
+        text-align: left;
+    }
+    
+    p{
+        font-size: 150%;
+    }
+    #exp{
+        width: 150%;
+    }
+    #bar-navigator ul{
+        gap: 30px;
+        justify-content: end;
+        font-size: 90%;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        text-decoration: none;
+        color: #000000;
+        border-radius: 20px;
+        margin-bottom: 0px;
     }
     .main-section{
-        padding: 150px 100px;
-
+        flex-direction: column;
+        flex-wrap: wrap;
     }
-    h1{
-        font-size: 46px;
-    }
-    #image{
-        width: 225px;
-    }
-    .link,.link1{
+    #link, #link1{
+        text-decoration: none;
+        text-align: center;
+        position: sticky;
+        bottom: 10px;
+        height: 20px;
+        right: 15px;
+        position: 30px;
+        background-color: #A98467; 
+        padding: 10px 25px;
+        font-size: 30px;
+        font-family: 'Merriweather', serif;
+        border-radius: 20px;
+        color: #f2e9e4;
         display: flex;
     }
+    div.media1#link,#link1{
+        gap: 2000px;
+        flex-wrap: wrap;
+        justify-content:  space-around;
+        align-content: end;
 }
-@media screen and (max-width: 300px){
+#logito{
+    width: 150%;
+}
+#insta,#feiss,#github{
+    flex-direction: column;
+    width: 50%;}
 
+img#chillon{
+    margin-top: 830px;
+
+}
+}
+@media screen and (max-width: 770px){
+    .WRAPPER{
+        justify-content:center;
+        padding-left: 0px;
+    }
+    #body{
+        text-overflow: initial;
+    }
+    
+    h1#tito{
+        font-size: 150%;
+        text-align: justify;
+    }
+    p{
+        font-size: 100%;
+        text-align: justify;
+    }
+    div#media1{
+        flex-direction: column-reverse;
+    }
+    img#exp{
+        width: 100%;
+
+    }
+    #bar-navigator ul{
+        gap: 30px;
+        justify-content: end;
+        font-size: 60%;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        text-decoration: none;
+        color: #000000;
+        border-radius: 20px;
+        margin-bottom: 0px;
+    }
+    .main-section{
+        display: block;
+        flex-direction: row;
+        justify-content: flex-start;
+    }
+    #finalfinal{
+    
+        font-size: 15px;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        text-align: center;}
+    div.media1{
+        gap: 3000px;
+        flex-wrap: wrap;
+        justify-content:  space-around;
+        align-content: end;
+    }
+    div.media1#link,#link1{
+        gap: 20px;
+        flex-wrap: wrap;
+        justify-content:  space-around;
+        align-content: end;
+}
+    .link, .link1{
+        text-decoration: none;
+        text-align: center;
+        position: sticky;
+        bottom: 50%;
+        height: 20px;
+        right: 15px;
+        position: 30px;
+        background-color: #A98467; 
+        padding: 0px 25px;
+        font-size: 100%;
+        font-family: 'Merriweather', serif;
+        border-radius: 30;
+        color: #f2e9e4;
+        display: flex;
+    }
+    #logito{
+        width: 150%;
+    }
+    #insta,#feiss,#github{
+        flex-direction: column;
+        width: 50%;
+}
 }
